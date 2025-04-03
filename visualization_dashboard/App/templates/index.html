@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home - Data Visualization Dashboard{% endblock %}
+
+{% block content %}
+<div class="jumbotron bg-light p-5 rounded">
+    <h1 class="display-4">Data Visualization Dashboard</h1>
+    <p class="lead">Welcome to the data visualization dashboard. This application provides interactive visualizations for analysis of various metrics.</p>
+    <hr class="my-4">
+    <p>Click the button below to view the dashboard with interactive charts and filters.</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'dashboard' %}" role="button">View Dashboard</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Interactive Visualizations</h5>
+                <p class="card-text">Explore data with interactive charts, graphs, and maps that allow for deep analysis.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Advanced Filtering</h5>
+                <p class="card-text">Apply multiple filters to focus on specific segments of data based on various parameters.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Data Insights</h5>
+                <p class="card-text">Gain valuable insights by visualizing key metrics and identifying patterns in the data.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
